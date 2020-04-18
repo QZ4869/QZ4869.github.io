@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Archives |  QZ
+    Linux连入校内网 |  QZ
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -35,139 +35,242 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article class="articles">
+  <article id="post-Linux连入校内网" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
     
-    
-    <h1 class="page-type-title">Archives</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2020" class="archive-year">2020</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/Linux_openconnect/" class="archive-article-date">
-  <time datetime="2020-04-18T08:30:46.000Z" itemprop="datePublished">04/18</time>
-</a>
+    <header class="article-header">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/Linux_openconnect/"
-    >Linux连入校内网</a
-  >
-</h2>
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Linux连入校内网
+</h1>
   
 
     </header>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/yingyucigen/" class="archive-article-date">
-  <time datetime="2020-04-05T02:58:42.000Z" itemprop="datePublished">04/05</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/yingyucigen/"
-    >英语词根整理</a
-  >
-</h2>
-  
 
-    </header>
     
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/riyuwushiyin/" class="archive-article-date">
-  <time datetime="2020-03-29T02:35:58.000Z" itemprop="datePublished">03/29</time>
+    <div class="article-meta">
+      <a href="/2020/Linux_openconnect/" class="article-date">
+  <time datetime="2020-04-18T08:30:46.000Z" itemprop="datePublished">2020-04-18</time>
 </a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/riyuwushiyin/"
-    >日语五十音入门</a
-  >
-</h2>
-  
-
-    </header>
-    
-    
-  </div>
-</article>
       
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/ruanjiantuijianwin10/" class="archive-article-date">
-  <time datetime="2020-03-22T15:29:16.000Z" itemprop="datePublished">03/22</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/ruanjiantuijianwin10/"
-    >软件推荐（win10）</a
-  >
-</h2>
-  
-
-    </header>
-    
-    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
   </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/aboutwebsite/" class="archive-article-date">
-  <time datetime="2020-03-13T16:00:00.000Z" itemprop="datePublished">03/14</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2020/aboutwebsite/"
-    >关于网站</a
-  >
-</h2>
-  
 
-    </header>
-    
-    
-  </div>
-</article>
       
+      
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">170字</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">1分钟</span>
+        </span>
+    </span>
+</div>
+
       
     </div>
+    
+
+    
+    
+
+
+
+
+    
+
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+      <p>学校一般会提供sslvpn服务便于大家在家连入校园网，windows下可以通过Pulse Secure方便使用sslvpn，而Linux下也可以通过OpenConnect工具来连接<br><a id="more"></a></p>
+<ol>
+<li><p>安装OpenConnect</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openconnect</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>下载<a href="http://www.infradead.org/openconnect/vpnc-script.html" target="_blank" rel="noopener">http://www.infradead.org/openconnect/vpnc-script.html</a>提供的<a href="http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script" target="_blank" rel="noopener">vpnc-script</a>,并复制到/etc/vpnc/vpnc-script</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script</span><br><span class="line">sudo cp vpnc-script /etc/vpnc/vpnc-script</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当要使用校园网时运行OpenConnect</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo openconnect --juniper -u [学号] [sslvpn url]</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如 sudo openconnect --juniper -u 20xxxxxxxx https://sslvpn.tsinghua.edu.cn/</span></span><br></pre></td></tr></table></figure>
+<p>之后会要求输入密码，没有报错并最终显示类似<code>ESP session established with server</code>应该就可以了，终端和网页就都可以用校园网了</p>
+</li>
+</ol>
+
+      
+      <!-- reward -->
+      
+      <div id="reward-btn">
+        打赏
+      </div>
+      
+    </div>
+    
+    
+      <!-- copyright -->
+      
+        <div class="declare">
+          <ul class="post-copyright">
+            <li>
+              <i class="ri-copyright-line"></i>
+              <strong>版权声明： </strong s>
+              本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow"
+                target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+            </li>
+          </ul>
+        </div>
+        
+    <footer class="article-footer">
+      
+          
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://qz4869.github.io/2020/Linux_openconnect/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+
+    </footer>
+
   </div>
+
   
+  
+  <nav class="article-nav">
+    
+    
+      <a href="/2020/yingyucigen/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">英语词根整理</div>
+      </a>
+    
+  </nav>
+
+
   
 
   
+  
+<!-- valine评论 -->
+<div id="vcomments-box">
+    <div id="vcomments">
+    </div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        app_id: 'yJzqoRkzG0Mf1tU1CgkYzNEI-gzGzoHsz',
+        app_key: 'RITGAUTcEWQ9SJ2j4NkwCXNQ',
+        path: window.location.pathname,
+        notify: 'true',
+        verify: 'true',
+        avatar: 'mp',
+        placeholder: '给我的文章加点评论吧~',
+        recordIP: true
+    });
+    const infoEle = document.querySelector('#vcomments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+        infoEle.childNodes.forEach(function (item) {
+            item.parentNode.removeChild(item);
+        });
+    }
+</script>
+<style>
+    #vcomments-box {
+        padding: 5px 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        #vcomments-box {
+            padding: 5px 0px;
+        }
+    }
+
+    #vcomments-box #vcomments {
+        background-color: #fff;
+    }
+
+    .v .vlist .vcard .vh {
+        padding-right: 20px;
+    }
+
+    .v .vlist .vcard {
+        padding-left: 10px;
+    }
+</style>
+
+  
+
+  
+  
+  
+
+</article>
 </section>
       <footer class="footer">
   <div class="outer">
@@ -308,6 +411,30 @@
 </script>
 
 
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    onClick: (e) => {
+      $('.toc-link').removeClass('is-active-link');
+      $(`a[href=${e.target.hash}]`).addClass('is-active-link');
+      $(e.target.hash).scrollIntoView();
+      return false;
+    }
+  });
+</script>
 
 
 
