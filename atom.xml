@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qz4869.github.io/"/>
-  <updated>2020-04-18T09:02:35.715Z</updated>
+  <updated>2020-04-18T09:04:44.108Z</updated>
   <id>https://qz4869.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://qz4869.github.io/2020/Linux_openconnect/"/>
     <id>https://qz4869.github.io/2020/Linux_openconnect/</id>
     <published>2020-04-18T08:30:46.000Z</published>
-    <updated>2020-04-18T09:02:35.715Z</updated>
+    <updated>2020-04-18T09:04:44.108Z</updated>
     
-    <content type="html"><![CDATA[<p>学校一般会提供sslvpn服务便于大家在家连入校园网，windows下可以通过Pulse Secure很方便的使用sslvpn，而Linux下也可以通过OpenConnect工具来连接。<br><a id="more"></a><br>步骤如下</p><p>安装OpenConnect<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openconnect</span><br></pre></td></tr></table></figure></p><p>下载<a href="http://www.infradead.org/openconnect/vpnc-script.html" target="_blank" rel="noopener">http://www.infradead.org/openconnect/vpnc-script.html</a>提供的<a href="http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script" target="_blank" rel="noopener">vpnc-script</a>,并复制到/etc/vpnc/vpnc-script<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script</span><br><span class="line">sudo cp vpnc-script /etc/vpnc/vpnc-script</span><br></pre></td></tr></table></figure></p><p>当要使用校园网时运行OpenConnect<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo openconnect --juniper -u [学号] [sslvpn url]</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如 sudo openconnect --juniper -u 20xxxxxxxx https://sslvpn.tsinghua.edu.cn/</span></span><br></pre></td></tr></table></figure><br>之后会要求输入密码，没有报错并最终显示类似<code>ESP session established with server</code>应该就可以了，终端和网页就都可以用校园网了</p>]]></content>
+    <content type="html"><![CDATA[<p>学校一般会提供sslvpn服务便于大家在家连入校园网，windows下可以通过Pulse Secure很方便的使用sslvpn，而Linux下也可以通过OpenConnect工具来连接。<br><a id="more"></a><br>步骤如下：</p><p>安装OpenConnect<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openconnect</span><br></pre></td></tr></table></figure></p><p>下载<a href="http://www.infradead.org/openconnect/vpnc-script.html" target="_blank" rel="noopener">http://www.infradead.org/openconnect/vpnc-script.html</a>提供的<a href="http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script" target="_blank" rel="noopener">vpnc-script</a>,并复制到/etc/vpnc/vpnc-script<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/vpnc-script</span><br><span class="line">sudo cp vpnc-script /etc/vpnc/vpnc-script</span><br></pre></td></tr></table></figure></p><p>当要使用校园网时运行OpenConnect<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo openconnect --juniper -u [学号] [sslvpn url]</span><br><span class="line"><span class="meta">#</span><span class="bash"> 如 sudo openconnect --juniper -u 20xxxxxxxx https://sslvpn.tsinghua.edu.cn/</span></span><br></pre></td></tr></table></figure><br>之后会要求输入密码，没有报错并最终显示类似<code>ESP session established with server</code>应该就可以了，终端和网页就都可以用校园网了</p>]]></content>
     
     <summary type="html">
     
